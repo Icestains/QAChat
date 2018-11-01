@@ -185,7 +185,7 @@ export default {
         Toast('请输入消息')
         return
       }
-
+      // 这里this.content是获取的发送内容
       this.records.push({
         type: 1,
         time: util.formatDate.format(new Date(), 'yyyy-MM-dd hh:mm:ss'),
@@ -197,8 +197,8 @@ export default {
         _this.records.push({
           type: 2,
           time: util.formatDate.format(new Date(), 'yyyy-MM-dd hh:mm:ss'),
-          name: '客服MM',
-          content: '你好！'
+          name: 'QAchat',
+          content: '你好！这里是回复的消息'
         })
       }, 100)
 
@@ -246,7 +246,7 @@ export default {
         {
           type: 2,
           time: util.formatDate.format(new Date(), 'yyyy-MM-dd hh:mm:ss'),
-          name: '客户MM',
+          name: 'QAChat',
           content: '这里是内容13213'
         })
 
